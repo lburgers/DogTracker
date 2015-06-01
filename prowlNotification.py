@@ -3,7 +3,7 @@ import shapely #need GEOS and distribute_setup
 from shapely.geometry import Polygon
 from shapely.geometry import Point
 #substitue your own values for the variables below
-yard = Polygon(((41.318768, -71.851663), (41.319073, -71.8519), (41.319466, -71.851804), (41.31888, -71.851453))) #boundaries of your property
+yard = Polygon(((40.695229, -73.993011), (40.695568, -73.992880), (40.695330, -73.991960), (40.694979, -73.992129))) #boundaries of your property
 String server = "YOUR SERVER URL"
 String prowlCode = "YOUR PROWL NUMBER"
 p = prowlpy.Prowl(prowlCode)
