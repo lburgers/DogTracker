@@ -162,8 +162,16 @@ void loop() {
     Serial.print(GPS.seconds, DEC); Serial.print('.');
     Serial.println(GPS.milliseconds);
     Serial.print("Fix: "); Serial.println((int)GPS.fix);
-  coordinates = getGSMLoc();
  
+ //if the GPS has a fix use its coordinates. if not use GSMLoc
+ if ((int)GPS.fix) {
+      
+      coordinates = String(GPS.longitudeDegrees) + ", " + String(GPS.latitudeDegrees);
+    } else {
+  coordinates = getGSMLoc();
+    }
+   
+ //Send the coordinates from the fona
   sendCoordinates(coordinates);
   }
 }
