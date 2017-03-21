@@ -11,7 +11,7 @@ Wire everything according to the photo below:
 
 Follow these steps and everything should work:
 
-Set up a webserver. I used a Raspberry Pi to do this and there are many guides on the internet.
+Set up a webserver. I used a Raspberry Pi -- there are many guides on the internet on how to do this.
 
 Put index.php and update.php in your servers /www/ folder and create an empty text file named "latLong.txt" in the same directory.
 
